@@ -1,10 +1,20 @@
 import React from 'react';
-import { CharacterContainer, CharacterName } from './styles';
+import styled from 'styled-components';
 
-const Character = ({ name }) => {
+const CharacterContainer = styled.div`
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+`;
+
+const CharacterName = styled.h2`
+  margin-bottom: 5px;
+`;
+
+const Character = ({ character }) => {
   return (
     <CharacterContainer>
-      <CharacterName>{name}</CharacterName>
+      <CharacterName>{character.name}</CharacterName>
     </CharacterContainer>
   );
 };

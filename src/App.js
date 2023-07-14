@@ -20,12 +20,10 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {characters.map((character) => (
-        <Character key={character.name} name={character.name} />
+        <Character key={character.name} character={character} />
       ))}
     </div>
   );
 };
 
 export default App;
-
-
