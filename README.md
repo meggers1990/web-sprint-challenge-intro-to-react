@@ -22,7 +22,47 @@ You are not allowed to collaborate during the sprint challenge.
 
 ### Introduction
 
-Inpm start
+In this challenge you will create a web page that presents a styled list of characters obtained from an API. Being able to render out data to a web page is a large part of what JavaScript developers do, this challenge assesses your ability to achieve such a task.
+
+In meeting the minimum viable product (MVP) specifications listed below, your project might look somewhat similar to the solution examples below:
+
+Example
+
+Another example
+
+### Instructions
+
+Your finished project must include all of the following requirements:
+
+ Use the endpoint [GET] https://swapi.dev/api/people/ (mocked in msw) to obtain characters.
+
+ Set the list of characters into state.
+
+ Render your characters to the DOM:
+
+Build a React component named 'Character' to render an individual character.
+Map over the list in state, and for each character render a Character to the page.
+Each rendered character must display its name in the DOM (e.g. "Luke Skywalker").
+The character's name can't be hard-coded into the HTML. This data must be obtained from the API.
+The components must be styled with styled-components.
+Notes:
+
+Data obtained from the endpoint using browser-run JavaScript is mocked with msw. It is not necessary to understand all that MSW is doing, it is only necessary to know that when you use axios to send a request to https://swapi.dev/api/people/ you will get the necessary data back.
+
+If you test the endpoint using HTTPie or Postman you will obtain different results, as msw won't intercept the request.
+
+You are welcome to create additional files but do not move or rename existing files or folders.
+
+Do not alter your package.json file except to install extra libraries.
+
+The start process can sometimes choke after adding new dependencies and may need to be restarted.
+
+In your solution, it is essential that you follow best practices and produce clean and professional results.
+
+Schedule time to review and polish your work, including spell-checking and grammar-checking.
+
+It is better to submit a challenge that meets MVP than one that attempts too much and does not.
+
 ### Stretch Goals
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on any of the following optional goals:
