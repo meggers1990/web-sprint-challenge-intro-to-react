@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Character from './Character';
+import './App.css';
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
