@@ -13,12 +13,12 @@ const CharacterCards = styled.div`
   padding: 4px;
 `;
 
-const Character = props => {
-  let { data } = props;
+const Character = (props) => {
+  const { data } = props;
 
   return (
     <div>
-      {data.map(starWars => {
+      {data.map((starWars) => {
         return (
           <CharacterCards key={starWars.name}>
             <div>
