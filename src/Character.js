@@ -21,11 +21,11 @@ const Character = (props) => {
       {data.map((starWars) => {
         return (
           <CharacterCards key={starWars.name}>
-            <div>
+            
               <h3>Name: {starWars.name}</h3>
               <h3>Gender: {starWars.gender}</h3>
               <h3>Birth Year: {starWars.birth_year}</h3>
-            </div>
+            
           </CharacterCards>
         );
       })}
